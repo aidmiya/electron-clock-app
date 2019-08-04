@@ -14,12 +14,14 @@ app.on('window-all-closed', function () {
 app.on('ready', function () {
 
   mainWindow = new BrowserWindow({
-    width: 500,
-    height: 150,
+    width: 600,
+    height: 170,
     minWidth: 250,
     minHeight: 80,
     resizable: true,
-    frame: false
+    frame: false,
+    transparent: true,
+    alwaysOnTop: true
    });
   mainWindow.loadURL('file://' + __dirname + '/app/index.html');
 
